@@ -41,6 +41,8 @@ Effectuez les opérations suivantes :
 1. résolvez ce problème avec IPOPT et faites afficher la solution ;
 
 ```{julia}
+Pkg.add("ADNLPModels")
+Pkg.add("NLPModelsIpopt")  # <- ces commandes auraient du aller dans le bloc de code précédent
 using ADNLPModels, NLPModelsIpopt
 
 # Définition de la fonction objectif
